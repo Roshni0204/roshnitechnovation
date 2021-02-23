@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOP</title>
+    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="slider.css">
+    <script type="text/javascript" src="Jquery.js"></script>
+    <script type="text/javascript" src="slider.js"></script>
+</head>
+
+<body>
+
+    <div class="shop">
+        <div class="s1">
+            <h>Shop With Us!</h>
+        </div>
+    </div>
+
+
+    <center>
+        <ul id="autoWidth" class="cs-hidden">
+            <li class="item-a">
+                <div class="box">
+                    <div class="slide-img">
+                        <img src="s18.jpg.png" alt="1" width="300">
+                        <div class="overlay">
+                            <a href="index.html" class="buy-btn">BUY NOW</a>
+                        </div>
+                    </div>
+                    <div class="detail-box">
+                        <div class="type">
+                            <a href="index.html">Total Solar Eclipse 2020</a>
+                            <span>Trending</span>
+                        </div>
+                        <a href="index.html" class="price">$30</a>
+
+
+
+                    </div>
+                </div>
+
+            </li>
+
+            <li class="item-b">
+                <div class="box">
+                    <div class="slide-img">
+                        <img src="s19.jpg.png" alt="2" width="300">
+                        <div class="overlay">
+                            <a href="index.html" class="buy-btn">BUY NOW</a>
+                        </div>
+                    </div>
+                    <div class="detail-box">
+                        <div class="type">
+                            <a href="#">Sun Moon And Earth</a>
+                            <span>Trending</span>
+                        </div>
+                        <a href="#" class="price">$50</a>
+
+
+
+                    </div>
+                </div>
+            </li>
+
+            <li class="item-c">
+                <div class="box">
+                    <div class="slide-img">
+                        <img src="s23.jpg.png" alt="3" width="300">
+                        <div class="overlay">
+                            <a href="index.html" class="buy-btn">BUY NOW</a>
+                        </div>
+                    </div>
+                    <div class="detail-box">
+                        <div class="type">
+                            <a href="#">Totality</a>
+                            <span>New Edition</span>
+                        </div>
+                        <a href="#" class="price">$100</a>
+
+
+
+                    </div>
+                </div>
+            </li>
+
+
+
+        </ul>
+    </center>
+    <h2 style="font-size: 30px; font-weight: 800; color: red;font-family: monospace; background-color: rosybrown;">
+        <marquee>New Books Edition will be out soon!!</marquee>
+    </h2>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#autoWidth').lightSlider({
+                autoWidth: true,
+                loop: true,
+                onSliderLoad: function () {
+                    $('#autoWidth').removeClass('cS-hidden');
+                }
+            });
+        });
+
+    </script>
+</body>
+
+</html>

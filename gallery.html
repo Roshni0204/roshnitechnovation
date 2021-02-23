@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" type="text/css" href="gallery.css">
+</head>
+
+<body>
+    <div class="content">
+        <h>Expereinces of <b style="color: rgb(240, 134, 96);">Solar Eclipse</b></h>
+    </div>
+
+    <div class="imgbox"><img src="s7.jpg.png"></div>
+    <ul class="thumb">
+        <li>
+            <a href="s7.jpg.png" target="imgbox"><img src="s7.jpg.png" width="120px"></a>
+        </li>
+        <li>
+            <a href="s9.jpg.png" target="imgbox"><img src="s9.jpg.png" width="120px"></a>
+        </li>
+        <li>
+            <a href="s12.jpg.png" target="imgbox"><img src="s12.jpg.png" width="120px"></a>
+        </li>
+        <li>
+            <a href="s14.jpg.png" target="imgbox"><img src="s14.jpg.png" width="120px"></a>
+        </li>
+        <li>
+            <a href="s13.jpg.png" target="imgbox"><img src="s13.jpg.png" width="120px"></a>
+        </li>
+
+        <li>
+            <a href="s15.jpg.png" target="imgbox"><img src="s15.jpg.png" width="120px"></a>
+        </li>
+        <li>
+            <a href="s17.jpg.png" target="imgbox"><img src="s17.jpg.png" width="120px"></a>
+        </li>
+        <li>
+            <a href="s16.jpg.png" target="imgbox"><img src="s16.jpg.png" width="120px"></a>
+        </li>
+
+    </ul>
+    <script src=" https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.thumb a').click(function (e) {
+                e.preventDefault();
+                $('.imgbox img').attr("src", $(this).attr("href"));
+            })
+        })
+
+    </script>
+
+</body>
+
+</html>
